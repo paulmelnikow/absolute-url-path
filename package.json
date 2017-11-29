@@ -1,5 +1,5 @@
 {
-  "name": "absolute-url-path",
+  "name": "url-path",
   "description": "Adaptation of the WHATWG URL API for absolute paths",
   "keywords": [
     "url",
@@ -18,12 +18,15 @@
       [
         "babel-plugin-transform-builtin-classes",
         {
-          "globals": ["URL", "URLSearchParams"]
+          "globals": [
+            "URL",
+            "URLSearchParams"
+          ]
         }
       ]
     ]
   },
-  "main": "dist/absolute-url-path.js",
+  "main": "dist/url-path.js",
   "files": [
     "dist"
   ],
@@ -36,9 +39,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:paulmelnikow/absolute-url-path.git"
+    "url": "git@github.com:paulmelnikow/url-path.git"
   },
-  "homepage": "https://github.com/paulmelnikow/absolute-url-path",
+  "homepage": "https://github.com/paulmelnikow/url-path",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-builtin-classes": "^0.4.0",

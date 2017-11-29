@@ -1,5 +1,5 @@
-absolute-url-path
-=================
+url-path
+========
 
 Adaptation of the WHATWG URL API for absolute paths.
 
@@ -17,15 +17,15 @@ Installation
 Requires Node 8+.
 
 ```
-npm install absolute-url-path
+npm install url-path
 ```
 
 
 Contribute
 ----------
 
-- Issue Tracker: https://github.com/paulmelnikow/absolute-url-path/issues
-- Source Code: https://github.com/paulmelnikowabsolute-url-path/
+- Issue Tracker: https://github.com/paulmelnikow/url-path/issues
+- Source Code: https://github.com/paulmelnikow/url-path/
 
 Pull requests welcome!
 
