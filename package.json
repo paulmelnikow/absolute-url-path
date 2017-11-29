@@ -1,0 +1,62 @@
+{
+  "name": "absolute-url-path",
+  "description": "Adaptation of the WHATWG URL API for absolute paths",
+  "keywords": [
+    "url",
+    "whatwg",
+    "whatwg-url",
+    "absolute",
+    "absolute-path"
+  ],
+  "version": "0.1.0",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      [
+        "babel-plugin-transform-builtin-classes",
+        {
+          "globals": ["URL", "URLSearchParams"]
+        }
+      ]
+    ]
+  },
+  "main": "dist/absolute-url-path.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "rm -rf dist && babel src -d dist",
+    "lint": "eslint '**/*.js'",
+    "test:js": "mocha 'src/**/*.spec.js'",
+    "test": "npm run lint && npm run test:js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:paulmelnikow/absolute-url-path.git"
+  },
+  "homepage": "https://github.com/paulmelnikow/absolute-url-path",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-builtin-classes": "^0.4.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.10.0",
+    "eslint-config-prettier": "^2.7.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-mocha": "^4.11.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^4.0.1",
+    "prettier": "1.7.4",
+    "sazerac": "^0.4.2"
+  },
+  "engines": {
+    "node": ">= 8.x"
+  }
+}
