@@ -1,11 +1,11 @@
 'use strict'
 
 const { test: sazeracTest, forCases, given } = require('sazerac')
-const AbsolutePath = require('..')
+const URLPath = require('..')
 
-const makeHref = (url, baseUrl) => new AbsolutePath(url, baseUrl).href
+const makeHref = (url, baseUrl) => new URLPath(url, baseUrl).href
 
-describe('AbsolutePath', function() {
+describe('URLPath', function() {
   sazeracTest(makeHref, () => {
     forCases([
       given('/foo/bar'),

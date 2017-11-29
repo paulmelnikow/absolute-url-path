@@ -2,7 +2,7 @@
 
 const { URL } = require('./url-api')
 
-class AbsolutePath extends URL {
+class URLPath extends URL {
   static bogusify(url) {
     if (!url) {
       return 'bogus:///'
@@ -30,7 +30,7 @@ class AbsolutePath extends URL {
       return
     } catch (e) {}
 
-    super(url, AbsolutePath.bogusify(baseUrl))
+    super(url, URLPath.bogusify(baseUrl))
     this.isBogus = true
   }
 
@@ -59,4 +59,4 @@ class AbsolutePath extends URL {
   }
 }
 
-module.exports = AbsolutePath
+module.exports = URLPath
