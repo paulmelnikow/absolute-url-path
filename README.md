@@ -5,6 +5,8 @@ Adaptation of the WHATWG URL API for absolute paths.
 
 Works in Node 8 and browsers which support the URL API (or have a polyfill).
 
+Only the `href` property is supported.
+
 ```js
 const url = new URLPath('/foo/bar')
 url.searchParams.set('query', 'something')
