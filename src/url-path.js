@@ -5,16 +5,16 @@ const { URL } = require('./url-api')
 class URLPath extends URL {
   static bogusify(url) {
     if (!url) {
-      return 'bogus:///'
+      return 'bogus://bogushost/'
     } else if (url.startsWith('/')) {
-      return `bogus://${url}`
+      return `bogus://bogushost${url}`
     } else {
-      return `bogus:///${url}`
+      return `bogus://bogushost/${url}`
     }
   }
 
   static debogusify(url) {
-    const bogus = 'bogus://'
+    const bogus = 'bogus://bogushost'
 
     // Confidence check.
     if (!url.startsWith(bogus)) {
@@ -32,19 +32,6 @@ class URLPath extends URL {
 
     super(url, URLPath.bogusify(baseUrl))
     this.isBogus = true
-  }
-
-  get protocol() {
-    return this.isBogus ? '' : super.protocol
-  }
-  get port() {
-    return this.isBogus ? '' : super.port
-  }
-  get host() {
-    return this.isBogus ? '' : super.host
-  }
-  get hostname() {
-    return this.isBogus ? '' : super.hostname
   }
 
   get href() {
