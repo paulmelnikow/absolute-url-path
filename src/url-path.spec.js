@@ -12,6 +12,8 @@ describe('URLPath', function() {
       given('/foo/bar', '/'),
       given('/foo/bar', '/baz'),
       given('/foo/bar', '/baz/'),
+      given('/foo/bar', ''),
+      given('/foo/bar', undefined),
     ]).expect('/foo/bar')
 
     given('foo/bar', '/baz/').expect('/baz/foo/bar')
