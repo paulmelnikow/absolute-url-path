@@ -57,7 +57,7 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
     "mocha": "^4.0.1",
-    "prettier": "1.7.4",
+    "prettier": "1.15.3",
     "prettier-check": "^2.0.0",
     "sazerac": "^0.4.2"
   },
