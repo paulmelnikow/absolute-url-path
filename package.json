@@ -35,7 +35,7 @@
     "build": "rm -rf dist && babel src -d dist",
     "lint": "eslint '**/*.js'",
     "prettier": "prettier --write '**/*.js'",
-    "prettier-check": "prettier-check '**/*.js'",
+    "prettier:check": "prettier --check '**/*.js'",
     "test:js": "mocha 'src/**/*.spec.js'",
     "test": "npm run lint && npm run test:js"
   },
@@ -58,7 +58,6 @@
     "eslint-plugin-standard": "^4.0.0",
     "mocha": "^6.0.0",
     "prettier": "1.17.1",
-    "prettier-check": "^2.0.0",
     "sazerac": "^1.0.0"
   },
   "engines": {
