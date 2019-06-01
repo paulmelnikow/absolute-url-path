@@ -59,7 +59,7 @@
     "mocha": "^6.0.0",
     "prettier": "1.17.1",
     "prettier-check": "^2.0.0",
-    "sazerac": "^0.4.2"
+    "sazerac": "^1.0.0"
   },
   "engines": {
     "node": ">= 8.x"
