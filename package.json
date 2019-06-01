@@ -8,7 +8,7 @@
     "absolute",
     "absolute-path"
   ],
-  "version": "0.2.1",
+  "version": "0.2.2",
   "license": "MIT",
   "babel": {
     "presets": [
@@ -34,8 +34,8 @@
     "prepare": "npm run build",
     "build": "rm -rf dist && babel src -d dist",
     "lint": "eslint '**/*.js'",
-    "prettier": "prettier --write '**/*.js'",
-    "prettier:check": "prettier --check '**/*.js'",
+    "prettier": "prettier --write '**/*.@(js|md|yml)'",
+    "prettier:check": "prettier --check '**/*.@(js|md|yml)'",
     "test:js": "mocha 'src/**/*.spec.js'",
     "test": "npm run lint && npm run test:js"
   },
