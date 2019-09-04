@@ -41,6 +41,7 @@ class URLPath extends URL {
   toString() {
     return this.href
   }
+
   toJSON() {
     return this.href
   }
