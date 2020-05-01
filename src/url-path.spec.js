@@ -6,7 +6,7 @@ const URLPath = require('./url-path')
 const debogusifyBogusify = url => URLPath.debogusify(URLPath.bogusify(url))
 const makeHref = (url, baseUrl) => new URLPath(url, baseUrl).href
 
-describe('URLPath', function() {
+describe('URLPath', function () {
   sazeracTest(debogusifyBogusify, () => {
     given('/foo/bar').expect('/foo/bar')
   })
